@@ -91,3 +91,4 @@ The collected data is stored in the `reddit_posts` table with the following sche
 | `created_utc`   | `TIMESTAMP` | Timestamp of post creation (in UTC)                         |
 | `num_comments`  | `INTEGER`   | Number of comments on the post                              |
 | `upvote_ratio`  | `FLOAT`     | Ratio of upvotes to total votes                             |
+
