@@ -92,4 +92,3 @@ The collected data is stored in the `reddit_posts` table with the following sche
 | `num_comments`  | `INTEGER`   | Number of comments on the post                              |
 | `upvote_ratio`  | `FLOAT`     | Ratio of upvotes to total votes                             |
 
-
