@@ -62,10 +62,10 @@ def continuous_collection():
         try:
             # Establish new connection each iteration
             conn = psycopg2.connect(
-                host="localhost",
-                database="reddit",
-                user="postgres",
-                password="root"
+                host=os.getenv('POSTGRES_HOST'),
+                database=os.getenv('POSTGRES_DB'),
+                user=os.getenv('POSTGRES_USER'),
+                password=os.getenv('POSTGRES_PASSWORD')
             )
             
             last_timestamp = get_last_processed_post(conn)

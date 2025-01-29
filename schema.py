@@ -1,11 +1,15 @@
 import psycopg2
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Connect to the database
 conn = psycopg2.connect(
-    host="localhost",
-    database="reddit",
-    user="postgres",
-    password="root"
+    host=os.getenv('POSTGRES_HOST'),
+    database=os.getenv('POSTGRES_DB'),
+    user=os.getenv('POSTGRES_USER'),
+    password=os.getenv('POSTGRES_PASSWORD')
 )
 
 # Create a cursor object
