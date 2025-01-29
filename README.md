@@ -25,7 +25,7 @@ Before running the script, ensure you have the following:
 
 ```bash
 git clone https://github.com/BharathRajuPalla/reddit_analysis.git
-cd reddit-data-collector
+cd reddit_analysis
 ```
 
 ### 2. Install Dependencies
